@@ -9,6 +9,15 @@ body
     --primary-color: #FF9500;
     --bg-gray: #f0f0f0
 }
+.text-center
+{
+    text-align: center;
+}
+
+.padding1rem
+{
+    padding: 1rem;
+}
 .container 
 {
     padding-left: 1rem;
@@ -31,7 +40,7 @@ body
 
 .header-images
 {
-    max-width: 550px;
+    max-width: 350px;
     display: block;
     margin: auto;
  
@@ -59,9 +68,9 @@ body
 
 .navigation
 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     background-color: var(--primary-color);
-    padding: 0.8rem;
+    padding: 0.7rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     color: white;
@@ -107,4 +116,20 @@ body
     border-radius: 1rem;
 
 }
+/**footer**/
+.footer
+{
+    background-color: var(--primary-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    font-size: 1rem;
 
+
+}
+
+.footer li a i 
+{
+    color: white;
+    padding: 1rem;
+}
