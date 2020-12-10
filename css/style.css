@@ -94,6 +94,10 @@ body
     color: white;
 }
 
+.navigation a{
+    color: white;
+}
+
 .nav-items
 {
     display: inline;
