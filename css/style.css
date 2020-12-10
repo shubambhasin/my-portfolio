@@ -54,6 +54,22 @@ body
     margin: auto;
  
 }
+.header-images-small
+{
+    max-width: 150px;
+    display: block;
+    margin: auto;
+ 
+}
+.header-images-medium
+{
+    max-width: 250px;
+    display: block;
+    margin: auto;
+ 
+}
+
+
 .list-inline
 {
     display: inline;
@@ -147,4 +163,17 @@ body
 {
     color: white;
     padding: 1rem;
+}
+
+.aboutme-img
+{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: auto;
+}
+.aboutme-img :hover{
+    width: 420px;
+    height: 420px;
 }
