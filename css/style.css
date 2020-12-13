@@ -132,6 +132,7 @@ body
 
 .primary-button
 {
+    margin-top: 1rem;
    background-color: var(--primary-color);
    color: white;
    border-radius: 0.7rem;
@@ -140,7 +141,7 @@ body
 
 .secondary-button
 {
-
+    margin-top: 1rem;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     border-radius: 0.7rem;
