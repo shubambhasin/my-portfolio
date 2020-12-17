@@ -10,6 +10,18 @@ body {
     --bg-gray: #f0f0f0
 }
 
+.blog-img
+{
+    height: 200px;
+    width: 150px;
+    border-radius: 0.5rem;
+    transition: 0.8s;
+}
+.blog-img:hover
+{
+    height: 400px;
+    width: 300px;
+}
 
 .text-center {
     text-align: center;
