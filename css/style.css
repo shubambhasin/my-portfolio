@@ -10,6 +10,12 @@ body {
     --bg-gray: #f0f0f0
 }
 
+.arrow
+{
+    height: 15px ;
+    width: 28px;
+}
+
 .blog-img
 {
     height: 200px;
