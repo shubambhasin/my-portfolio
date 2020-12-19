@@ -242,6 +242,12 @@ body {
     text-decoration: none;
 }
 
+.tile-in-tile
+{
+    list-style-type: none;
+    
+}
+
 /**footer**/
 .footer {
     background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
@@ -263,4 +269,3 @@ body {
     color: white;
     padding: 1rem;
 }
-
