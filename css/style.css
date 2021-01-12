@@ -25,9 +25,6 @@ body {
     border: 2px solid #FF512F ;
 }
 
-.aboutme-img-navbar
-{
-}
 
 .arrow
 {
@@ -135,6 +132,8 @@ body {
 }
 
 .navigation {
+    display: flex;
+    height: 50px;
     font-size: 1rem;
     background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
     transition: 0.5s;
@@ -145,24 +144,27 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(255, 102, 0, 0.19);
 }
 
-.navigation ul {
-    text-align: right;
-
-}
-
-.navigation li a {
-    color: white;
-}
-
 .navigation a {
     color: white;
+  
 }
 
+.nav-brand
+{
+    margin: 0.3rem;
+    padding: 0.4rem;
+}
 .nav-items {
-    display: inline;
-    margin: 0.4rem;
+   
+    margin: 0.3rem;
+    margin-left: auto;
     padding: 0.4rem;
 
+}
+
+.nav-items a 
+{
+    margin: 0.5rem;
 }
 
 .navigation:hover {
