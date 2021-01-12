@@ -10,6 +10,17 @@ body {
     --bg-gray: #f0f0f0
 }
 
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 800px;
+    margin: auto;
+
+}
+
 .aboutme-img {
     display: block;
     width: 250px;
@@ -69,16 +80,6 @@ body {
 }
 
 
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.container-center {
-    max-width: 800px;
-    margin: auto;
-
-}
 
 .container-radius {
     border-radius: 1rem;
@@ -270,4 +271,13 @@ body {
 .footer li a i {
     color: white;
     padding: 1rem;
+}
+
+@media (max-width: 374px)
+{
+    .navigation
+    {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
 }
