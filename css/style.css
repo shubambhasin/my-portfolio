@@ -121,7 +121,15 @@ body {
 
 .links {
     text-decoration: none;
+    color: black;
+    width: auto;
+    display: inline;
 
+}
+
+.links:hover
+{
+    text-decoration: underline;
 }
 
 .link-active {
@@ -133,6 +141,8 @@ body {
 }
 
 .navigation {
+    width: 100%
+    margin:auto;
     display: flex;
     height: 50px;
     font-size: 1rem;
@@ -201,7 +211,8 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
 
-
+    outline: none;
+border: none;
     transition: 0.5s;
     width: auto;
     background-size: 200% auto;
@@ -234,6 +245,8 @@ body {
     color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
+    border: none;
+    outline: none;
     
     
 }
@@ -280,4 +293,29 @@ body {
         display: grid;
         grid-template-columns: 2fr 2fr;
     }
+}
+
+
+/* *********************Projectss css***************************************** */
+
+.project-grid 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-items: center;
+
+}
+
+.project-grid h1
+{
+
+    font-size: 1    rem;
+
+}
+
+.project-grid .primary-button, .secondary-button
+{
+    width: 50%;
 }
