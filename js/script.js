@@ -7,4 +7,6 @@ themeToggler.addEventListener('click', () => {
     document.querySelector(".navigation").classList.toggle("dark")
     document.querySelector(".orange").classList.toggle("dark")
     document.querySelector(".bg-gray").classList.toggle("dark")
+    document.querySelector(".footer").classList.toggle("dark")
+
 })
