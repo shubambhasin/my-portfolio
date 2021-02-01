@@ -534,6 +534,10 @@ body.dark {
   );
 }
 
+p{
+    color: var(--header-text);
+}
+
 .secondary-button {
   margin: 10px;
   padding: 0.5rem;
