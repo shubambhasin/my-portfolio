@@ -21,19 +21,13 @@ body {
   --dark-two: #96008e;
   --dark-three: #e100ff;
   background-color: rgb(255, 255, 255);
-  
 
-  --bg-bg:  linear-gradient(
-    to right,
-    #f0f0f0 0%,
-    #d4d4d4 51%,
-    #ededed 100%
-  );
+  --bg-bg: linear-gradient(to right, #f0f0f0 0%, #d4d4d4 51%, #ededed 100%);
   --dark-headers: #ff512f;
   --tile-text: rgb(32, 32, 32);
   --font-color: white;
   transition: var(--transition-delay);
---header-text: black;
+  --header-text: black;
 }
 
 .container {
@@ -194,8 +188,7 @@ body {
   text-decoration: none;
 }
 
-
-.navigation .toggler{
+.navigation .toggler {
   display: none;
 }
 
@@ -284,6 +277,9 @@ body {
   color: white;
   font-size: 1rem;
   background-size: 200% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer:hover {
   background-position: right center; /* change the direction of the change here */
@@ -291,22 +287,17 @@ body {
   text-decoration: none;
 }
 
+footer ul {
+  padding-inline-start: 0px;
+}
 .footer li a i {
   color: white;
   padding: 1rem;
 }
 
-@media (max-width: 374px) {
-  .navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-
-h1,h2
-{
-    color: var(--header-text);
+h1,
+h2 {
+  color: var(--header-text);
 }
 
 /* *********************Projectss css***************************************** */
@@ -333,12 +324,13 @@ h1,h2
   */
 
 .nav2 {
-    background: linear-gradient(
-        to right,
-        var(--nav-one) 0%,
-        var(--nav-two) 51%,
-        var(--nav-three) 100%
-      );padding: 10px;
+  background: linear-gradient(
+    to right,
+    var(--nav-one) 0%,
+    var(--nav-two) 51%,
+    var(--nav-three) 100%
+  );
+  padding: 10px;
 
   border-radius: 5px;
   display: flex;
@@ -389,37 +381,28 @@ h1,h2
   justify-content: center;
 }
 
-
-
-.project-grid
-{
-    background-size: cover   ;
-    background-repeat: repeat;
+.project-grid {
+  background-size: cover;
+  background-repeat: repeat;
 }
 
-
 .theme-toggler {
-   
+  display: flex;
+  color: var(--header-text);
+  justify-content: center;
+  position: absolute;
+  margin: 10px;
+  outline: none;
+  left: 5px;
+}
 
-    display: flex;
-    color: var(--header-text);
-justify-content: center;   
-    position: absolute;
-    margin: 10px;
-    outline: none;
-    left: 5px;
-  }
-  
-.moon, .sun
-{
-    opacity: 1;
-    border-radius: 50%;
-    border: none;
-    
- 
+.moon,
+.sun {
+  opacity: 1;
+  border-radius: 50%;
+  border: none;
 
-    fill: var(--nav-one);
-
+  fill: var(--nav-one);
 }
 /* ********************************************************************************* */
 
@@ -441,18 +424,13 @@ body.dark {
     #2b2b2b 100%
   );
 
-  --bg-bg:  linear-gradient(
-    to right,
-    #202020 0%,
-    #333333 51%,
-    #3a3a3a 100%
-  );
+  --bg-bg: linear-gradient(to right, #202020 0%, #333333 51%, #3a3a3a 100%);
   --tile-text: rgb(161, 161, 161);
   --header-text: rgb(161, 161, 161);
-  
 }
 
-.navigation, .nav2{
+.navigation,
+.nav2 {
   box-shadow: 0 4px 8px 0 rgba(140, 0, 255, 0.2),
     0 6px 10px 0 rgba(162, 0, 255, 0.19);
 }
@@ -465,46 +443,48 @@ body.dark {
   color: var(--dark-headers);
 }
 
-.bg-gray
-{
-
-    background-image: var(--bg-bg);
+.bg-gray {
+  background-image: var(--bg-bg);
   transition: 0.5s;
   color: whitesmoke;
   background-size: 200% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: var(--tile-text);
-
 }
 
 .footer {
-    background: linear-gradient(to right, var(--nav-one) 0%, var(--nav-two) 51%, var(--nav-three) 100%);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    transition: 00.5s;
-    color: white;
-    font-size: 1rem;
-    background-size: 200% auto;
-  }
-  .footer.dark:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer li a i {
-    color: white;
-    padding: 1rem;
-  }
+  background: linear-gradient(
+    to right,
+    var(--nav-one) 0%,
+    var(--nav-two) 51%,
+    var(--nav-three) 100%
+  );
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: 00.5s;
+  color: white;
+  font-size: 1rem;
+  background-size: 200% auto;
+}
+.footer.dark:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
 
-  /**buttons**/
+.footer li a i {
+  color: white;
+  padding: 1rem;
+}
+
+/**buttons**/
 
 .primary-button {
   background-image: linear-gradient(
     to right,
     var(--nav-one) 0%,
     var(--nav-two) 51%,
-    var(--nav-three)100%
+    var(--nav-three) 100%
   );
 }
 
@@ -539,8 +519,8 @@ body.dark {
   );
 }
 
-p{
-    color: var(--header-text);
+p {
+  color: var(--header-text);
 }
 
 .secondary-button {
@@ -564,38 +544,32 @@ p{
   color: #fff;
   text-decoration: none;
 }
-.navigation #hidden
-{
+.navigation #hidden {
   display: flex;
 }
 /* ********************************************************************************* */
-@media screen and (max-width: 530px)
-{
+@media screen and (max-width: 530px) {
   .navigation .nav-items {
     display: none;
-    
   }
-  
+
   .navigation #hidden {
     display: flex;
     flex-direction: column;
     position: absolute;
     height: 150px;
     background: #000;
-    width:auto;
+    width: auto;
     right: 0;
     top: 80px;
-    
   }
-  .navigation button{
-    
-    background-color: transparent; 
+  .navigation button {
+    background-color: transparent;
     border: none;
     cursor: pointer;
     display: inline;
-  
   }
-  .navigation .toggler{
+  .navigation .toggler {
     display: inline;
     padding: 0 5px;
     border: none;
@@ -604,12 +578,44 @@ p{
 
     color: white;
   }
-
-
 }
-@media screen and (max-width: 374px)
-{
-  .navigation 
+@media screen and (max-width: 374px) {
+  .navigation {
+    display: flex;
+  }
+  .header-images {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .navigation {
+    display: flex;
+  }
+  .header-images {
+    max-width: 200px;
+  }
+  .navigation .nav-brand
   {
-    display: flex;  }
+    font-size: small;
+  }
+  body{
+    font-size: small;
+  }
+
+  footer h3, li
+  {
+    font-size: small;
+  
+
+  }
+  .main-header
+  {
+    font-size: medium;
+  }
 }
+
+@media screen and (max-width: 229px) {
+  
+  .header-images {
+    max-width: 150px;
+  }
