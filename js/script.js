@@ -10,3 +10,28 @@ themeToggler.addEventListener('click', () => {
     document.querySelector(".footer").classList.toggle("dark")
 
 })
+
+const toggleBtn = document.querySelector('.toggler')
+const navItems = document.querySelector('.nav-items')
+toggleBtn.addEventListener('click', toggleNav)
+
+
+function toggleNav()
+{
+
+    console.log("Nav toggle")
+    if(navItems.getAttribute('id', 'hidden'))
+    
+    {
+
+        navItems.setAttribute('id', "")
+
+    }
+    else
+    {
+        navItems.setAttribute( 'id' ,"hidden")
+    }
+
+    
+
+}
