@@ -538,6 +538,11 @@ p {
   outline: none;
 }
 
+.projectssDiv
+{
+  height: 100vmin;
+}
+
 .secondary-button:hover {
   background-position: right center;
   /* change the direction of the change here */
